@@ -1,0 +1,29 @@
+html, body {
+    color: #111111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.2em;
+
+    height: 100%;
+}
+
+
+// Typography
+h2 {
+    margin-top: 0;
+}
+
+
+// Form Elements
+input[type=text] {
+    height: 46px;
+    padding: 0 16px;
+
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    outline: 0;
+}
+
+input[type=text]:focus {
+    border-color: #0f7ef1;
+}
