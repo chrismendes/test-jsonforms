@@ -1,5 +1,7 @@
 /** @jsx jsx */
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import AppBar from './appmaker/components/common/AppBar';
 import SideMenu from './appmaker/components/common/SideMenu';
 import ClientAppCanvas from './appmaker/components/ClientAppCanvas';
