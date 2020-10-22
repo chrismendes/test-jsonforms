@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from 'react';
-import AppBar from './appmaker/components/AppBar';
-import SideMenu from './appmaker/components/SideMenu';
+import AppBar from './appmaker/components/common/AppBar';
+import SideMenu from './appmaker/components/common/SideMenu';
 import ClientAppCanvas from './appmaker/components/ClientAppCanvas';
 import MaterialToolbar from '@material-ui/core/Toolbar';
 import { css, jsx } from '@emotion/core';
