@@ -1,7 +1,7 @@
 import React from 'react';
 import FieldFactory from '../../factories/FieldFactory';
 
-const ClientAppCanvas = () => {
+const ClientAppContainer = () => {
 
   return (
     <React.Fragment>
@@ -12,4 +12,4 @@ const ClientAppCanvas = () => {
   
 }
 
-export default ClientAppCanvas;
+export default ClientAppContainer;

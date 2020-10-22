@@ -6,7 +6,7 @@ import userData from './appmaker/services/userData';
 
 import AppBar from './appmaker/components/common/AppBar';
 import SideMenu from './appmaker/components/common/SideMenu';
-import ClientAppCanvas from './appmaker/components/ClientAppCanvas';
+import ClientAppContainer from './appmaker/components/ClientAppContainer';
 import MaterialToolbar from '@material-ui/core/Toolbar';
 import { css, jsx } from '@emotion/core';
 
@@ -20,7 +20,7 @@ function App() {
       <SideMenu />
       <main css={css`padding: 40px;`}>
         <MaterialToolbar />
-        <ClientAppCanvas />
+        <ClientAppContainer />
       </main>
     </div>
   );
