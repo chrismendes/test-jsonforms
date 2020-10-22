@@ -38,7 +38,7 @@ const Number = (props) => {
   };
   
   return (
-    <React.Fragment>
+    <div className={classes.root}>
       <MaterialTypography id="input-slider" gutterBottom>
         {label}
       </MaterialTypography>
@@ -65,7 +65,7 @@ const Number = (props) => {
           />
         </MaterialGrid>
       </MaterialGrid>
-    </React.Fragment>
+    </div>
   );
   
 }
