@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from './components/AppBar';
-import SideMenu from './components/SideMenu';
+import AppBar from './appmaker/components/AppBar';
+import SideMenu from './appmaker/components/SideMenu';
 
 const useStyles = makeStyles((theme) => ({
   root: {
