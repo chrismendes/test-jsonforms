@@ -15,7 +15,7 @@ import { css, jsx } from '@emotion/core';
 function App() {
 
   const clientApps = userData.apps;
-  const routePrefix = '/apps/';
+  const routePrefix = '/app/';
 
   return (
     <Router>
