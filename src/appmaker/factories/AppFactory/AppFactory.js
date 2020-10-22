@@ -10,20 +10,11 @@ const AppFactory = (props) => {
     return false;
   }
 
-  const generateRoute = (name) => {
-    if(!name) return null;
-    const routeName = name.toLowerCase().replace(' ', '-');
-    const url = routePrefix + routeName;
-    return url;
-  }
-
   const generateFields = (fieldConfig) => {
     return (
       <React.Fragment>
-        {fieldConfig.map(function(field) {
-          if(!field.name || !field.type) {
-            return <FieldFactory type={field.type} label={field.name} />
-          }
+        {fieldConfig.map(function(field, i) {
+          return <FieldFactory type={field.type} label={field.name} key={i} />
         })}
       </React.Fragment>
     );

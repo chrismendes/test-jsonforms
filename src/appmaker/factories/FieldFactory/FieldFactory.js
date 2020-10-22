@@ -16,6 +16,8 @@ const FieldFactory = (props) => {
         return <TextField {...props} />
       case "datetime":
         return <DateTime {...props} />
+      default:
+        return <p>Missing field for type: {type}</p>
     }
   };
   

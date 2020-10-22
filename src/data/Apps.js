@@ -87,7 +87,7 @@ const apps = [
       {
         "field": "Name",
         "position": {"row": 0, "column": 0},
-        "display": "textbox"
+        "display": "text"
       },
       {
         "field": "HQ",
@@ -97,7 +97,7 @@ const apps = [
       {
         "field": "Contact",
         "position": {"row": 2, "column": 0},
-        "display": "textbox"
+        "display": "text"
       }
     ],
     "workflowTriggers": {
