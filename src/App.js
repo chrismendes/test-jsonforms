@@ -13,11 +13,9 @@ function App() {
   const classes = useStyles();
 
   return (
-    <div className="App">
-      <div className={classes.root}>
-        <AppBar />
-        <SideMenu />
-      </div>
+    <div className={classes.root}>
+      <AppBar />
+      <SideMenu />
     </div>
   );
 }
