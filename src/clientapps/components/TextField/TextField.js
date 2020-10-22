@@ -6,7 +6,7 @@ const TextField = (props) => {
   const label = (props.label) ? props.label : '';
 
   return (
-    <MaterialTextField label={label} />
+    <MaterialTextField label={label} variant="outlined" />
   );
   
 }
