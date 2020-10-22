@@ -10,7 +10,7 @@ const FieldFactory = (props) => {
     return false;
   }
 
-  const getField = (type) => {
+  const getComponent = (type) => {
     switch(type) {
       case "text":
         return <TextField {...props} />
@@ -19,7 +19,7 @@ const FieldFactory = (props) => {
     }
   };
   
-  return getField(type);
+  return getComponent(type);
   
 };
 
