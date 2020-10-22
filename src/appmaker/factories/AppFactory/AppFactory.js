@@ -45,6 +45,7 @@ const AppFactory = (props) => {
       <div css={css`
         display: grid;
         grid-template-columns: 50% 50%;
+        grid-auto-rows: 80px;
       `}>
 
         {fieldConfig.map(function(field, i) {

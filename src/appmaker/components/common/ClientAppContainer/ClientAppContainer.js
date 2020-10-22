@@ -6,7 +6,7 @@ import { PinDropSharp } from '@material-ui/icons';
 const ClientAppContainer = (props) => {
 
   return (
-    <main css={css`padding: 40px 80px; width: 100%;`}>
+    <main css={css`padding: 60px 80px; width: 100%;`}>
       {props.children}
     </main>
   );
