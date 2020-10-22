@@ -1,4 +1,4 @@
-{ "apps": [
+const apps = [
   {
     "name": "Equipment Request",
     "description": "Use this form to request new laptops, printers, etc.",
@@ -106,4 +106,5 @@
       ]
     }
   }
-]}
+];
+export default apps;

@@ -1,4 +1,4 @@
-{ "objects": [
+const objects = [
   {
     "name": "Equipment",
     "properties": [
@@ -61,4 +61,5 @@
       }
     ]
   }
-]}
+];
+export default objects;

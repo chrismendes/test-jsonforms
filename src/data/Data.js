@@ -1,4 +1,4 @@
-{ "data": [
+const data = [
   {
     "system.name": "Equipment",
     "system.id": 1,
@@ -65,4 +65,5 @@
     "HQ": { "latitude": 37.4122095, "longitude": -122.1509495 },
     "Contact": "800 474 6836"
   }
-]}
+];
+export default data;
