@@ -1,6 +1,7 @@
 import React from 'react';
 import TextField from '../../../clientapps/components/TextField';
 import DateTime from '../../../clientapps/components/DateTime';
+import Checkbox from '../../../clientapps/components/Checkbox';
 
 const FieldFactory = (props) => {
 
@@ -12,10 +13,12 @@ const FieldFactory = (props) => {
 
   const getComponent = (type) => {
     switch(type) {
-      case "text":
+      case 'text':
         return <TextField {...props} />
-      case "datetime":
+      case 'datetime':
         return <DateTime {...props} />
+      case 'bool':
+        return <Checkbox {...props} />
       default:
         return <p>Field not implemented for type: {type}</p>
     }
