@@ -42,23 +42,32 @@ const AppFactory = (props) => {
    */
   const generateFields = (fieldConfig) => {
     return (
-      <div css={css`
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-auto-rows: 80px;
-      `}>
+      <React.Fragment>
+        <h1 css={css`
+          margin-top: 0;
+          margin-bottom: 40px;
+        `}>
+          {config.name}
+        </h1>
 
-        {fieldConfig.map(function(field, i) {
-          const layout = getLayoutConfig(field.name);
+        <div css={css`
+          display: grid;
+          grid-template-columns: 50% 50%;
+          grid-auto-rows: 80px;
+        `}>
 
-          return ((layout) ?
-            <LayoutFactory col={layout.column} row={layout.row} key={i}>
-              <FieldFactory type={field.type} label={field.name} key={i} />
-            </LayoutFactory>
-          : '');
-        })}
+          {fieldConfig.map(function(field, i) {
+            const layout = getLayoutConfig(field.name);
 
-      </div>
+            return ((layout) ?
+              <LayoutFactory col={layout.column} row={layout.row} key={i}>
+                <FieldFactory type={field.type} label={field.name} key={i} />
+              </LayoutFactory>
+            : '');
+          })}
+
+        </div>
+      </React.Fragment>
     );
   };
 
