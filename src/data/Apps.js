@@ -72,7 +72,7 @@ const apps = [
       },
       {
         "field": "Approved",
-        "position": {"row": 2, "column": 1},
+        "position": {"row": 3, "column": 0},
         "display": "bool"
       }
     ],
