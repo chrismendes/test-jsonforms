@@ -8,7 +8,7 @@ import userData from './appmaker/services/userData';
 
 import AppBar from './appmaker/components/common/AppBar';
 import SideMenu from './appmaker/components/common/SideMenu';
-import ClientAppContainer from './appmaker/components/ClientAppContainer';
+import ClientAppContainer from './appmaker/components/common/ClientAppContainer';
 import MaterialToolbar from '@material-ui/core/Toolbar';
 import { css, jsx } from '@emotion/core';
 
@@ -19,15 +19,14 @@ function App() {
 
   return (
     <Router>
-      <div css={css`
-        display: flex;
-      `}>
+      <div css={css`display: flex;`}>
 
         <AppBar />
         <SideMenu />
-        <main css={css`padding: 40px;`}>
 
+        <ClientAppContainer>
           <MaterialToolbar />
+
           <Switch>
             <Route
               key="0"
@@ -36,6 +35,7 @@ function App() {
             >
               <h2>Select an Application</h2>
             </Route>
+
             {clientApps.map((app, i) => (
               <Route
                 key={i+1}
@@ -47,7 +47,7 @@ function App() {
             ))}
           </Switch>
 
-        </main>
+        </ClientAppContainer>
       </div>
     </Router>
   );

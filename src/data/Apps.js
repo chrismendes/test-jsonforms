@@ -69,6 +69,11 @@ const apps = [
           "max-value": 10,
           "step": 1
         }
+      },
+      {
+        "field": "Approved",
+        "position": {"row": 2, "column": 1},
+        "display": "bool"
       }
     ],
     "workflowTriggers": {
