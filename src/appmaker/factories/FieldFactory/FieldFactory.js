@@ -9,7 +9,6 @@ import { css, jsx } from '@emotion/core';
 const FieldFactory = (props) => {
 
   const type = props.type;
-  const label = props.label;
   if(!type) {
     return false;
   }

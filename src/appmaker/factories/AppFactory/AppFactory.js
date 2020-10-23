@@ -8,7 +8,6 @@ const AppFactory = (props) => {
 
   const config = props.config;
   const layouts = props.config.layout;
-  const routePrefix = '/app/';
 
   if(!config) {
     return false;

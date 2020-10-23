@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import React from 'react';
 import { css, jsx } from '@emotion/core';
-import { PinDropSharp } from '@material-ui/icons';
 
 const ClientAppContainer = (props) => {
 
