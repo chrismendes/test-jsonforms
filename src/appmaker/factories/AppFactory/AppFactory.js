@@ -41,7 +41,8 @@ const AppFactory = (props) => {
    * @param {object} fieldConfig Field config/definition object
    */
   const generateFields = (fieldConfig) => {
-    return (
+
+    return ((typeof fieldConfig !== 'string') ?
       <React.Fragment>
         <h1 css={css`
           margin-top: 0;
@@ -72,7 +73,7 @@ const AppFactory = (props) => {
           })}
 
         </div>
-      </React.Fragment>
+      </React.Fragment> : ''
     );
   };
 
