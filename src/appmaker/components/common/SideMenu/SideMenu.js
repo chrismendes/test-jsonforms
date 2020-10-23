@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import MaterialDrawer from '@material-ui/core/Drawer';
 import MaterialToolbar from '@material-ui/core/Toolbar';
@@ -64,14 +64,14 @@ export default function SideBar(props) {
           </MaterialListItem>
           {links.map((link, i) => (
 
-            <Link to={link.url} key={link.url} css={css`color: #000000de; text-decoration: none;`}>
+            <NavLink to={link.url} key={link.url} css={css`color: #000000de; text-decoration: none;`}>
               <MaterialListItem button>
                 <MaterialListItemIcon>
                   <MaterialDesktopWindowsIcon />
                 </MaterialListItemIcon>
                 <MaterialListItemText primary={link.text} />
               </MaterialListItem>
-            </Link>
+            </NavLink>
           ))}
 
         </MaterialList>
