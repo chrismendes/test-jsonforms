@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import React from 'react';
-import TextField from '../../../clientapps/components/TextField';
-import DateTime from '../../../clientapps/components/DateTime';
-import Checkbox from '../../../clientapps/components/Checkbox';
-import Number from '../../../clientapps/components/Number';
+import TextField from '../../../clientforms/components/TextField';
+import DateTime from '../../../clientforms/components/DateTime';
+import Checkbox from '../../../clientforms/components/Checkbox';
+import Number from '../../../clientforms/components/Number';
 import { css, jsx } from '@emotion/core';
 
 const FieldFactory = (props) => {

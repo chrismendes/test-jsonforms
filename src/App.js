@@ -2,13 +2,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import AppFactory from './appmaker/factories/AppFactory';
-import URLHelper from './appmaker/helpers/url';
-import userData from './appmaker/services/userData';
+import FormFactory from './formviewer/factories/FormFactory';
+import URLHelper from './formviewer/helpers/url';
+import userData from './formviewer/services/userData';
 
-import AppBar from './appmaker/components/AppBar';
-import SideMenu from './appmaker/components/SideMenu';
-import ClientAppContainer from './appmaker/components/ClientAppContainer';
+import AppBar from './formviewer/components/AppBar';
+import SideMenu from './formviewer/components/SideMenu';
+import ClientAppContainer from './formviewer/components/ClientAppContainer';
 import MaterialToolbar from '@material-ui/core/Toolbar';
 import { css, jsx } from '@emotion/core';
 
@@ -51,7 +51,7 @@ function App() {
                 path={routePrefix + URLHelper.stringToURL(app.name)}
                 exact
               >
-                <AppFactory config={app} />
+                <FormFactory config={app} />
               </Route>
             ))}
           </Switch>

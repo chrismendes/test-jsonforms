@@ -4,7 +4,7 @@ import FieldFactory from '../FieldFactory';
 import LayoutFactory from '../LayoutFactory';
 import { css, jsx } from '@emotion/core';
 
-const AppFactory = (props) => {
+const FormFactory = (props) => {
 
   const config = props.config;
   const layouts = props.config.layout;
@@ -79,4 +79,4 @@ const AppFactory = (props) => {
   
 };
 
-export default AppFactory;
+export default FormFactory;
