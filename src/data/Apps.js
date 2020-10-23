@@ -104,6 +104,10 @@ const apps = [
         "type": "text",
       },
       {
+        "name": "Email Address",
+        "type": "text",
+      },
+      {
         "name": "HQ",
         "type": "location"
       },
@@ -125,6 +129,10 @@ const apps = [
       {
         "field": "Website",
         "position": {"row": 2, "column": 0}
+      },
+      {
+        "field": "Email Address",
+        "position": {"row": 2, "column": 1}
       },
       {
         "field": "HQ",
