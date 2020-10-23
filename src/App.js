@@ -16,13 +16,19 @@ function App() {
 
   const clientApps = userData.apps;
   const routePrefix = '/app/';
+  const appLinks = clientApps.map((app) => {
+    return {
+      text: app.name,
+      url: routePrefix + URLHelper.stringToURL(app.name)
+    }
+  });
 
   return (
     <Router>
       <div css={css`display: flex;`}>
 
         <AppBar />
-        <SideMenu />
+        <SideMenu links={appLinks} />
 
         <ClientAppContainer>
           <MaterialToolbar />

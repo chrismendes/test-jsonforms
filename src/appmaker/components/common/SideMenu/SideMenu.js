@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import MaterialDrawer from '@material-ui/core/Drawer';
 import MaterialToolbar from '@material-ui/core/Toolbar';
@@ -35,10 +36,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SideBar() {
+export default function SideBar(props) {
 
   const classes = useStyles();
-  const menuItems = [ 'Equipment Request', 'Edit Manufacturer' ];
+  const links = props.links;
   
   return (
     <MaterialDrawer
@@ -58,16 +59,19 @@ export default function SideBar() {
         <MaterialList>
           <MaterialListItem>
             <MaterialListItemText
-              primary="Your Applications"
+              primary="Your Apps"
             />
           </MaterialListItem>
-          {menuItems.map((text, index) => (
-            <MaterialListItem button key={text}>
-              <MaterialListItemIcon>
-                <MaterialDesktopWindowsIcon />
-              </MaterialListItemIcon>
-              <MaterialListItemText primary={text} />
-            </MaterialListItem>
+          {links.map((link, i) => (
+
+            <Link to={link.url} key={link.url} css={css`color: #000000de; text-decoration: none;`}>
+              <MaterialListItem button>
+                <MaterialListItemIcon>
+                  <MaterialDesktopWindowsIcon />
+                </MaterialListItemIcon>
+                <MaterialListItemText primary={link.text} />
+              </MaterialListItem>
+            </Link>
           ))}
 
         </MaterialList>
