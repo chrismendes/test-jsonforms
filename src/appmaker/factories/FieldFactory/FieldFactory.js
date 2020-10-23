@@ -13,6 +13,11 @@ const FieldFactory = (props) => {
     return false;
   }
 
+  /**
+   * Factory function returning component based on specified type
+   * 
+   * @param {string} type e.g. "text", "integer", "datatime", etc.
+   */
   const getComponent = (type) => {
     switch(type) {
       case 'text':
