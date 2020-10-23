@@ -8,7 +8,7 @@ import MaterialList from '@material-ui/core/List';
 import MaterialListItem from '@material-ui/core/ListItem';
 import MaterialListItemText from '@material-ui/core/ListItemText';
 import MaterialListItemIcon from '@material-ui/core/ListItemIcon';
-import MaterialDesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
+import MaterialStarIcon from '@material-ui/icons/Star';
 import { css, jsx } from '@emotion/core';
 
 const drawerWidth = 240;
@@ -67,7 +67,7 @@ export default function SideBar(props) {
             <NavLink to={link.url} key={link.url} css={css`color: #000000de; text-decoration: none;`}>
               <MaterialListItem button>
                 <MaterialListItemIcon>
-                  <MaterialDesktopWindowsIcon />
+                  <MaterialStarIcon />
                 </MaterialListItemIcon>
                 <MaterialListItemText primary={link.text} />
               </MaterialListItem>
