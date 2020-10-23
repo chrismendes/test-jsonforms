@@ -22,8 +22,7 @@ const apps = [
       },
       {
         "name": "Equipment",
-        "type": "object",
-        "object": "Equipment",
+        "type": "text",
         "validation": {
           "required": true
         }
@@ -97,6 +96,14 @@ const apps = [
         }
       },
       {
+        "name": "Address",
+        "type": "text",
+      },
+      {
+        "name": "Website",
+        "type": "text",
+      },
+      {
         "name": "HQ",
         "type": "location"
       },
@@ -112,13 +119,21 @@ const apps = [
         "display": "text"
       },
       {
+        "field": "Address",
+        "position": {"row": 1, "column": 0}
+      },
+      {
+        "field": "Website",
+        "position": {"row": 2, "column": 0}
+      },
+      {
         "field": "HQ",
-        "position": {"row": 1, "column": 0},
+        "position": {"row": 3, "column": 0},
         "display": "locationPicker"
       },
       {
         "field": "Contact",
-        "position": {"row": 2, "column": 0},
+        "position": {"row": 4, "column": 0},
         "display": "text"
       }
     ],

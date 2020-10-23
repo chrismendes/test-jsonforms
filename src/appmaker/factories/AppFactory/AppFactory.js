@@ -63,7 +63,6 @@ const AppFactory = (props) => {
 
           {fieldConfig.map(function(field, i) {
             const layout = getLayoutConfig(field.name);
-
             return ((layout) ?
               <LayoutFactory col={layout.column} row={layout.row} key={i} css={css``}>
                 <FieldFactory type={field.type} label={field.name} key={i} />
