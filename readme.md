@@ -1,6 +1,6 @@
 # Code Exercise - JSON Forms
 
-  > A very simple React application that renders forms according to their JSON definition.
+  > A simple React application that renders forms according to their JSON definition.
 
   > Run the app at: https://app-jsonforms.chrismendes.uk
 
