@@ -28,7 +28,6 @@
 
 * Not all UI components defined by the provided JSON files have been implemented (e.g Object, Phone, Location)
 * Features such as form validation and data object lookup as featured in provided JSON not implemented (app and field recognition and layout positioning only)
-* App sidebar is hidden on small screens but menu button to slide in sidebar not implemented
 * Slider component used for Integer field type (to showcase another Material UI component), but JSON defined maximum value not implemented
 
 **Run the app**
