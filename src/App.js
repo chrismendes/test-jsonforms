@@ -58,6 +58,9 @@ function App() {
                 path={routePrefix + URLHelper.stringToURL(app.name)}
                 exact
               >
+                <p css={css`@media(min-width: 1001px) { display: none; }`}>
+                  <a href="/">&laquo; Back</a>
+                </p>
                 <FormFactory config={app} />
               </Route>
             ))}
