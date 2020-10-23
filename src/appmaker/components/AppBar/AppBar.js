@@ -20,15 +20,17 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function AppBar() {
+export default function AppBar(props) {
+
   const classes = useStyles();
+  const appTitle = (props.title) ? props.title : '';
 
   return (
     <MaterialAppBar position="fixed" className={classes.appBar}>
       <MaterialToolbar>
         <MaterialTypography variant="h6" noWrap>
           <Link to="/" css={css`color: #fff; text-decoration: none;`}>
-            Application Maker
+            {appTitle}
           </Link>
         </MaterialTypography>
       </MaterialToolbar>

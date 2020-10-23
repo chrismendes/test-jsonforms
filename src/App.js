@@ -27,7 +27,7 @@ function App() {
     <Router>
       <div css={css`display: flex;`}>
 
-        <AppBar />
+        <AppBar title="JSON Forms" />
         <SideMenu links={appLinks} />
 
         <ClientAppContainer>
