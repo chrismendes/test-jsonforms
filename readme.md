@@ -11,7 +11,7 @@
 * Components for JSON-defined forms located separately in `/src/clientforms` directory
 * Source files for components/logic rendering the forms located in `/src/formviewer` directory
 * Solution opts for strong use of the "Factory" design pattern with "factory" components responsible for generating components on request (see `/src/formviewer/factories` directory), e.g. FieldFactory component will generate TextField or DateTime field for example based on JSON definition
-* Routes determined by JSON definitions with 'apps/' prefix, implemented with React Router
+* Routes and nav links determined by JSON definitions with 'forms/' prefix (implemented with React Router)
 * "Material UI" library used for quick off-the-shelf UI components as a helpful resource for rapid prototyping
 * "Emotion" implementation of JSS (CSS in JavaScript) used as a substitute for physical CSS/Sass files
 * CSS Grid Layout used to easily position fields into correct column and row as per JSON definition
