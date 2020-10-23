@@ -15,7 +15,7 @@ import { css, jsx } from '@emotion/core';
 function App() {
 
   const clientApps = userData.apps;
-  const routePrefix = '/app/';
+  const routePrefix = '/form/';
   const appLinks = clientApps.map((app) => {
     return {
       text: app.name,
