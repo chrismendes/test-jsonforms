@@ -6,9 +6,9 @@ import AppFactory from './appmaker/factories/AppFactory';
 import URLHelper from './appmaker/helpers/url';
 import userData from './appmaker/services/userData';
 
-import AppBar from './appmaker/components/common/AppBar';
-import SideMenu from './appmaker/components/common/SideMenu';
-import ClientAppContainer from './appmaker/components/common/ClientAppContainer';
+import AppBar from './appmaker/components/AppBar';
+import SideMenu from './appmaker/components/SideMenu';
+import ClientAppContainer from './appmaker/components/ClientAppContainer';
 import MaterialToolbar from '@material-ui/core/Toolbar';
 import { css, jsx } from '@emotion/core';
 
