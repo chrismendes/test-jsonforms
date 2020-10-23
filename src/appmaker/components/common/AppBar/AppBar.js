@@ -1,8 +1,11 @@
+/** @jsx jsx */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import MaterialAppBar from '@material-ui/core/AppBar';
 import MaterialToolbar from '@material-ui/core/Toolbar';
 import MaterialTypography from '@material-ui/core/Typography';
+import { css, jsx } from '@emotion/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,7 +27,9 @@ export default function AppBar() {
     <MaterialAppBar position="fixed" className={classes.appBar}>
       <MaterialToolbar>
         <MaterialTypography variant="h6" noWrap>
-          Application Maker
+          <Link to="/" css={css`color: #fff; text-decoration: none;`}>
+            Application Maker
+          </Link>
         </MaterialTypography>
       </MaterialToolbar>
     </MaterialAppBar>
