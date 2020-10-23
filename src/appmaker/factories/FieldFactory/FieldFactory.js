@@ -1,8 +1,10 @@
+/** @jsx jsx */
 import React from 'react';
 import TextField from '../../../clientapps/components/TextField';
 import DateTime from '../../../clientapps/components/DateTime';
 import Checkbox from '../../../clientapps/components/Checkbox';
 import Number from '../../../clientapps/components/Number';
+import { css, jsx } from '@emotion/core';
 
 const FieldFactory = (props) => {
 
@@ -23,7 +25,11 @@ const FieldFactory = (props) => {
       case 'bool':
         return <Checkbox {...props} />
       default:
-        return <p>Field not implemented for type: {type}</p>
+        return (
+          <p css={css`color: #888; font-style: italic;`}>
+            Field not implemented for type: {type}
+          </p>
+        );
     }
   };
   
