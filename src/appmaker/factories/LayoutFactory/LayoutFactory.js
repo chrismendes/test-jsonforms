@@ -13,6 +13,9 @@ const LayoutFactory = (props) => {
       grid-column-end: ${columnPosition};
       grid-row-start: ${rowPosition};
       grid-row-end: ${rowPosition};
+      @media (max-width: 1000px) {
+        margin-bottom: 40px;
+      }
     `}>
       {props.children}
     </div>

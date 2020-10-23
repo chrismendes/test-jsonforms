@@ -53,14 +53,19 @@ const AppFactory = (props) => {
         <div css={css`
           display: grid;
           grid-template-columns: 50% 50%;
+          grid-column-gap: 40px;
           grid-auto-rows: 100px;
+          @media (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
+          }
         `}>
 
           {fieldConfig.map(function(field, i) {
             const layout = getLayoutConfig(field.name);
 
             return ((layout) ?
-              <LayoutFactory col={layout.column} row={layout.row} key={i}>
+              <LayoutFactory col={layout.column} row={layout.row} key={i} css={css``}>
                 <FieldFactory type={field.type} label={field.name} key={i} />
               </LayoutFactory>
             : '');

@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import MaterialDrawer from '@material-ui/core/Drawer';
@@ -7,6 +8,7 @@ import MaterialListItem from '@material-ui/core/ListItem';
 import MaterialListItemText from '@material-ui/core/ListItemText';
 import MaterialListItemIcon from '@material-ui/core/ListItemIcon';
 import MaterialDesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
+import { css, jsx } from '@emotion/core';
 
 const drawerWidth = 240;
 
@@ -45,6 +47,11 @@ export default function SideBar() {
       classes={{
         paper: classes.drawerPaper,
       }}
+      css={css`
+        @media (max-width: 1000px) {
+          display: none;
+        }
+      `}
     >
       <MaterialToolbar />
       <div className={classes.drawerContainer}>
