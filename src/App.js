@@ -40,9 +40,9 @@ function App() {
               exact
             >
               <h1 css={css`margin-top: 0;`}>
-                Select Application
+                Select Form
               </h1>
-              <p>Select a JSON-defined application from the sidebar.</p>
+              <p>Select a JSON-defined form from the sidebar.</p>
             </Route>
 
             {clientApps.map((app, i) => (
