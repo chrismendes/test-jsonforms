@@ -42,7 +42,14 @@ function App() {
               <h1 css={css`margin-top: 0;`}>
                 Select Form
               </h1>
-              <p>Select a JSON-defined form from the sidebar.</p>
+              <p css={css`@media(max-width: 1000px) { display: none; }`}>
+                Select a JSON-defined form from the sidebar.
+              </p>
+              <div css={css`@media(min-width: 1001px) { display: none; }`}>
+                {clientApps.map((app, i) => (
+                  <p><a href={routePrefix + URLHelper.stringToURL(app.name)}>{app.name}</a></p>
+                ))}
+              </div>
             </Route>
 
             {clientApps.map((app, i) => (
