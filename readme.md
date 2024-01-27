@@ -1,4 +1,4 @@
-# Code Exercise - JSON Forms
+# Interview Test - JSON Forms
 
   > A simple React application that renders forms according to their JSON definition.
 
